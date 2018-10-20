@@ -1,0 +1,22 @@
+Die Dump merupakan fungsi bawaan PHP, contoh penerapannya sebagai berikut :
+
+$buah = ['mangga','anggur','pisang'];
+
+Jika kita akan mencoba untuk menampilkan hasil sementara dan mengecek apakah koding sudah dilakukan dengan benar, 
+maka cukup mengetikkan perintah ini di dalam baris kode yang akan dijalankan.
+
+var_dump($buah);
+Tetapi baris kode yang berada di bawah fungsi tersebut masih akan tetap dijalankan.
+Solusinya dengan menambahkan fungsi die(); dibawahnya, sehingga kode yang ada di bawah fungsi die() tidak akan dieksekusi.
+
+Dan hasilnya akan menampilkan info detail antara lain tipe data, jumlah string, dan juga isinya, sebagai berikut :
+
+array(3){
+[0]=>string(5)"mangga"	[1]=>string(6)"anggur [2]=>string(6)"pisang"
+}
+
+
+Fungsi dd($variabel) yang ada di dalam laravel mungkin merupakan gabungan dari kedua fungsi tersebut di atas.
+
+
+
